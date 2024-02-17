@@ -9,51 +9,6 @@ screen.title('us state guessing game')
 screen.addshape(image)
 turtle.shape(image)
 
-# names = Turtle()
-# names.hideturtle()
-# names.penup()
-# # # def get_cord(x,y):
-# # #     print(x,y)
-# # #
-# # # screen.onscreenclick(get_cord)
-# # #
-# # # screen.mainloop()
-# #
-# #
-# data = pandas.read_csv('50_states.csv')
-# # print(data['state'])
-# state_list = data['state'].to_list()
-# # print(state_list)
-# answer_state = screen.textinput(title='Guess the state',prompt='make a state name')
-# for each_state in state_list:
-#     if answer_state == each_state:
-#         get_in = state_list.index(each_state)
-#         row = data[data['state'] == answer_state]
-#         # print(row)
-#         x_axis = row.x[get_in]
-#         # print(x_axis)
-#         y_axis = row.y[get_in]
-#         # print(y_axis)
-#
-#         names.goto(x_axis,y_axis)
-#         names.write(arg=answer_state,align='center')
-
-
-
-# # print(state_list)
-# game_on = True
-# while game_on:
-#     answer_state = screen.textinput(title='Guess the state', prompt='make a state name')
-#     for each_state in state_list:
-#         if answer_state == each_state:
-#             get_in = state_list.index(each_state)
-#             state_row = data[data['state'] == answer_state]
-#             x_axis = state_row.x[get_in]
-#             y_axis = state_row.y[get_in]
-#             names.goto(x_axis, y_axis)
-#             names.write(arg=answer_state, align='center')
-#         if answer_state == 'exit':
-#             game_on = False
 
 data = pandas.read_csv('50_states.csv')
 state_list = data['state'].to_list()
