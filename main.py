@@ -15,7 +15,7 @@ state_list = data['state'].to_list()
 guessed_states = []
 new = []
 while len(guessed_states)<50:
-    answer_state = screen.textinput(title=f'{len(guessed_states)}/50 states correct',prompt='make a state name').capitalize()
+    answer_state = screen.textinput(title=f'{len(guessed_states)}/50 states correct',prompt='make a state name').title()
     if answer_state == 'Exit':
         for each in state_list:
             if each not in guessed_states:
